@@ -14,10 +14,10 @@
 # %%
 cfg = {
     'method': 'random',
-    'name': 'Transformer Blue',
+    'name': 'Transformer Bleu',
     'metric': {
         'goal': 'maximize',
-        'name': 'blue_score'
+        'name': 'bleu_score'
     },
     'parameters': {
         'learning_rate': { 'values': [0.0005, 0.001] },
