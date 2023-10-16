@@ -114,3 +114,9 @@ We can see that dropout and number of heads is playing a major role in the perfo
 The number of heads also shows a negative correlation. This is probably because of the embedding dimension size. Due to the small size of the embedding dimensions, having more number of heads will lead to embeddings provided for each head to be of such a small size that it loses information rather than retains the information about the word. So, it is better to have a lower number of heads.
 
 The learning rate shows a small correlation. This could be because I have not provided a big learning rate. The biggest is the average learning rate which is usually provided: 0.001.
+
+![Parallel Coordinates Plot](images/parallel_coordinates.png)
+
+The link for the interactive plot is [here](https://api.wandb.ai/links/shu7bh/62xi6cng).
+
+It is also clearly visible from this plot that the optimizer is playing a major role. Most of the times, RMSprop is performing better than Adam.
